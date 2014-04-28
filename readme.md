@@ -4,7 +4,7 @@ I saw this on Ghost ( http://ghost.org/features ).
 
 ## Example
 
-![Example](https://raw.github.com/raymondidema/ghostmark/master/example.jpg)
+![Example](https://raw.githubusercontent.com/raymondidema/ghostmark/master/example.jpg)
 
 coming soon live demo!
 
