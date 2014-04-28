@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ghost Mark</title>
+    <!-- CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="js/ghostmark/css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="js/ghostmark/assets/font-awesome-4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="js/ghostmark/css/ghostmark.css">
+</head>
+<body onload="prettyPrint()">
+    <main id="main">
+        <section class="ghost-container">
+            <header class="ghost-title">
+                <input type="text" placeholder="Your Title here...">
+            </header>
+            <section class="ghost-markdown">
+                <header class="floatingheader">
+                    <small>Markdown</small>
+                </header>
+                <section class="ghostmark">
+                    <textarea id="ghostmark"></textarea>
+                </section>
+            </section>
+            <section class="ghost-mirror">
+                <header class="floatingheader">
+                    <small>Preview</small>
+                    <small class="ghost-word-count">0 words</small>
+                </header>
+                <section class="ghostmirror">
+                    <div id="ghostmirror"></div>
+                </section>
+            </section>
+        </section>
+    </main>
+    <!-- JS CSS -->
+    <link rel="stylesheet" type="text/css" href="js/ghostmark/assets/codemirror-4.1/lib/codemirror.css">
+    <!-- SCRIPT -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/ghostmark/assets/showdown-0.3.1/compressed/showdown.js"></script>
+    <script src="js/ghostmark/assets/codemirror-4.1/lib/codemirror.js"></script>
+    <script src="js/ghostmark/assets/codemirror-4.1/mode/markdown/markdown.js"></script>
+    <script src="js/ghostmark/assets/codemirror-4.1/addon/fold/markdown-fold.js"></script>
+    <script src="js/ghostmark/assets/dropzonejs/dropzone.js"></script>
+    <script src="js/ghostmark/showdown/imagereplacement.js"></script>
+    <script src="js/ghostmark/assets/showdown-0.3.1/compressed/extensions/github.js"></script>
+    <script src="js/ghostmark/assets/showdown-0.3.1/compressed/extensions/twitter.js"></script>
+    <script src="js/ghostmark/assets/showdown-0.3.1/src/extensions/prettify.js"></script>
+    <script src="js/ghostmark/assets/google-code-prettify/prettify.js"></script>
+    <script src="js/ghostmark/lib/ghostmark.js"></script>
+    <script src="js/ghostmark/src/jquery.ghostmark.js"></script>
+    
+</body>
+</html>

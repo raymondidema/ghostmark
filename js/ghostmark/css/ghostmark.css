@@ -1,0 +1,208 @@
+body {
+  background: #edece4;
+  width: 100%;
+  font-weight: 300;
+  color: #242628;
+  font: normal 81.2%/1.65 "Open Sans", sans-serif; }
+
+#main {
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  left: 15px;
+  bottom: 0;
+  padding: 0; }
+  #main .ghost-container {
+    position: relative;
+    height: 100%; }
+    #main .ghost-container .ghost-title {
+      background: white;
+      height: 53px;
+      padding: 2px 15px;
+      position: relative;
+      box-shadow: rgba(0, 0, 0, 0.05) 0 1px 5px; }
+      #main .ghost-container .ghost-title input {
+        border: 0;
+        margin: 0;
+        font-size: 3em;
+        font-weight: bold;
+        letter-spacing: -1px;
+        width: 100%;
+        background: transparent;
+        outline: 0; }
+        #main .ghost-container .ghost-title input:focus {
+          outline: 0; }
+    #main .ghost-container .ghost-markdown {
+      z-index: 200;
+      box-sizing: border-box;
+      width: 50%;
+      padding: 15px;
+      position: absolute;
+      bottom: 40px;
+      top: 61px;
+      background: white;
+      box-shadow: rgba(0, 0, 0, 0.05) 0 1px 5px;
+      border-right: #edece4 2px solid; }
+    #main .ghost-container .ghost-mirror {
+      box-sizing: border-box;
+      width: 50%;
+      padding: 15px;
+      position: absolute;
+      bottom: 40px;
+      top: 61px;
+      background: white;
+      box-shadow: rgba(0, 0, 0, 0.05) 0 1px 5px;
+      right: 0;
+      border-left: #edece4 2px solid; }
+
+.floatingheader {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 400;
+  height: 40px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  color: #aaa9a2;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, white 0%, white 25%, rgba(255, 255, 255, 0.9) 100%); }
+  .floatingheader small {
+    font-size: 0.85em; }
+  .floatingheader .ghost-word-count {
+    float: right; }
+
+.ghostmark .CodeMirror {
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-family: Inconsolata, monospace;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  color: #3c4043; }
+  .ghostmark .CodeMirror .CodeMirror-lines {
+    padding: 65px 0 40px 0;
+    cursor: text; }
+  .ghostmark .CodeMirror pre {
+    padding: 0 40px; }
+
+.ghostmirror {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 60px 40px 40px 40px;
+  overflow: auto;
+  word-break: break-word;
+  hyphens: auto;
+  user-select: none;
+  cursor: default;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 300; }
+  .ghostmirror p {
+    margin: 1.2em 0 1.6em; }
+    .ghostmirror p:first-child {
+      margin-top: 0; }
+  .ghostmirror img {
+    max-width: 100%; }
+
+.prettyprint {
+  background: #222222;
+  font-size: 0.85em;
+  line-height: 1.2em;
+  -webkit-font-smoothing: antialiased; }
+  .prettyprint ol {
+    color: #42403a; }
+
+.media {
+  font-size: 4rem;
+  display: block;
+  color: #e7e6db; }
+
+.dropzone-js {
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 1.6em 0;
+  position: relative;
+  overflow: hidden;
+  padding: 55px 60px;
+  border: #edece4 3px dashed;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #aaa9a2;
+  background: #f9f8f5; }
+
+.ghost-image {
+  position: relative; }
+  .ghost-image .ghost-trash {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: white;
+    font-size: 14px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    vertical-align: middle;
+    transition: ease 0.25s all; }
+  .ghost-image:hover .ghost-trash {
+    background: rgba(0, 0, 0, 0.85); }
+
+.ghost-upload {
+  position: relative; }
+  .ghost-upload .ghost-add-link {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 5px;
+    background: #f9f8f5;
+    box-sizing: border-box; }
+    .ghost-upload .ghost-add-link input {
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -17px;
+      width: 80%;
+      left: 10%;
+      right: 10%;
+      box-sizing: border-box;
+      padding: 2px 7px;
+      border: 3px solid #edece4;
+      font-size: 1.1rem;
+      outline: 0; }
+      .ghost-upload .ghost-add-link input:focus {
+        outline: 0; }
+  .ghost-upload .ghost-url {
+    position: absolute;
+    display: inline-block;
+    bottom: 8px;
+    left: 12px;
+    color: #aaa9a2;
+    text-decoration: none;
+    font-size: 1.5rem; }
+    .ghost-upload .ghost-url:hover {
+      text-decoration: none; }
+  .ghost-upload .ghost-close-link {
+    position: absolute;
+    display: inline-block;
+    top: 8px;
+    right: 12px;
+    color: #aaa9a2;
+    text-decoration: none;
+    font-size: 1.5rem; }
+    .ghost-upload .ghost-close-link:hover {
+      text-decoration: none; }
